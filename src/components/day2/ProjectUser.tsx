@@ -1,9 +1,11 @@
 import React from "react";
-import anh from "../assets/img/Bao.jpg";
+import anh from "../../assets/img/OIP.webp";
+
 interface User  {
 	id:string;
 	name: string;
 	email: string;
+	phone: string;
 	avatarUrl?: string;
 };
 
@@ -18,6 +20,7 @@ const ProjectUser = () => {
 				id: "1",
 				name: "Phạm Đức Hoàng Vũ",
 				email: "vupham.190504@gmail.com",
+				phone: "0898197946",
 				avatarUrl: anh
 			});
 			setLoading(false);
@@ -37,6 +40,7 @@ const ProjectUser = () => {
 			<div>
 				<h3>{user.name}</h3>
 				<p>{user.email}</p>
+				<p>{user.phone}</p>
 			</div>
 		</div>
 	);
